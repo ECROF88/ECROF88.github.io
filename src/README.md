@@ -5,8 +5,8 @@ icon: home
 title: Blog Home
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: shao yi chen
-tagline: You can put your slogan here
 heroFullScreen: true
+tagline: Kovaak'S PurSue!
 projects:
   - icon: project
     name: project name
