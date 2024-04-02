@@ -69,7 +69,10 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
-        description: "A FrontEnd programmer",
+        avatar: "https://avatars.githubusercontent.com/u/114860152?s=400&u=cbe5964d8b2b1057bc78fc069afc29744df08ba6&v=4",
+        name: "ECROF",
+        roundAvatar: true,
+        description: "GODDDD LIKE",
         intro: "/intro.html",
       },
 
@@ -96,7 +99,7 @@ export default hopeTheme({
         avatar: "https://avatars.githubusercontent.com/u/114860152?s=400&u=cbe5964d8b2b1057bc78fc069afc29744df08ba6&v=4",
         name: "ECROF",
         roundAvatar: true,
-        description: "eqwewqeqweqwe",
+        description: "GODDDD LIKE",
         intro: "/zh/intro.html",
       },
 
