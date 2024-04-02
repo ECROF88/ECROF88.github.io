@@ -95,6 +95,7 @@ export default hopeTheme({
       blog: {
         avatar: "https://avatars.githubusercontent.com/u/37236667?v=4",
         name: "ECROF88",
+        roundAvatar: true,
         description: "111111#####",
         intro: "/zh/intro.html",
       },
