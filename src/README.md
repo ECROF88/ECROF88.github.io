@@ -31,7 +31,7 @@ projects:
   - icon: friend
     name: friend name
     desc: Detailed description of friend
-    link: https://link.to.your.friend
+    link: https://wispstar.github.io
 
   - icon: https://theme-hope-assets.vuejs.press/logo.svg
     name: custom item
