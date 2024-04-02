@@ -93,6 +93,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
+        name: "ECROF88",
         description: "一个前端开发者",
         intro: "/zh/intro.html",
       },
