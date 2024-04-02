@@ -93,6 +93,7 @@ export default hopeTheme({
       displayFooter: true,
 
       blog: {
+        avatar: "https://avatars.githubusercontent.com/u/37236667?v=4",
         name: "ECROF88",
         description: "一个前端开发者",
         intro: "/zh/intro.html",
