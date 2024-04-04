@@ -9,7 +9,7 @@ export const zhNavbar = navbar([
     prefix: "/zh/posts/",
     children: [
       {
-        text: "苹果",
+        text: "TEST1",
         icon: "pen-to-square",
         prefix: "apple/",
         children: [
