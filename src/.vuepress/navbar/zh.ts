@@ -1,9 +1,10 @@
-import { navbar } from "vuepress-theme-hope";
+import { checkSocialMediaIcons, navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/zh/",
   "/zh/demo/",
   {
+
     text: "博文",
     icon: "pen-to-square",
     prefix: "/zh/posts/",
@@ -42,7 +43,13 @@ export const zhNavbar = navbar([
       { text: "火龙果", icon: "pen-to-square", link: "dragonfruit" },
       "tomato",
       "strawberry",
+      { text: "微分方程", icon: "book", prefix: "differential-equations/" ,
+        children: [
+          { text: "1", icon: "pen-to-square", link: "test1" },
+        ],
+       },
     ],
+
   },
   {
     text: "V2 文档",
