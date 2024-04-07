@@ -1,5 +1,6 @@
 import { defineUserConfig } from "vuepress";
 import theme from "./theme.js";
+import { hopeTheme } from "vuepress-theme-hope";
 
 export default defineUserConfig({
   base: "/",
@@ -14,6 +15,7 @@ export default defineUserConfig({
       lang: "zh-CN",
       title: "",
       description: "",
+      
     },
   },
 
@@ -21,7 +23,6 @@ export default defineUserConfig({
 
   // Enable it with pwa
   // shouldPrefetch: false,
-
 
 
 

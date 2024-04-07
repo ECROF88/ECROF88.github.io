@@ -2,7 +2,7 @@ import { checkSocialMediaIcons, navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
   "/zh/",
-  "/zh/demo/",
+  // "/zh/demo/",
   {
 
     text: "博文",

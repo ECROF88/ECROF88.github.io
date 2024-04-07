@@ -22,3 +22,37 @@ y_1^{\prime}y_2-y_1y_2^\prime =0 \Rightarrow & y_1,y_2 \;\text{线性相关}
 \end{aligned}
 \right.
 $$
+
+```javascript
+var a =100
+console.log(100)
+```
+
+::: info 啊啊啊啊啊啊info
+一个有 `代码` 和 [前往谷歌](https://www.google.com) 的信息容器。
+```js
+const a = 1;
+```
+:::
+---
+---
+--------
+---
+一个tab：
+
+::: tabs#fruit
+
+@tab apple #a
+
+Apple
+
+@tab banana #b
+
+Banana
+
+@tab orange #c
+
+Orange
+
+:::
+
