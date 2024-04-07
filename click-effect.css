@@ -1,0 +1,17 @@
+/* customStyles.css */
+.firework {
+    position: fixed;
+    width: 15px; /* 根据你的图片大小调整 */
+    height: 15px; /* 根据你的图片大小调整 */
+    background-image: url('1.png');
+    border-radius: 100%;
+    background-size: cover;
+    background-position: left top;
+    opacity: 0;
+    animation: sparkleAnimation 0.3s ;
+  }
+  
+  @keyframes sparkleAnimation {
+      0% { opacity: 0.5; }
+      100% { opacity: 0; }
+  }
