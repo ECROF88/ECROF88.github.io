@@ -4,7 +4,10 @@ import { hopeTheme } from "vuepress-theme-hope";
 
 export default defineUserConfig({
   base: "/",
-
+  head: [
+    ['link', { rel: 'stylesheet', href: "/click-effect.css" }],
+    ['script', { src: '/click-effect.js' }],
+  ],
   locales: {
     "/": {
       lang: "en-US",
