@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: home
-title: Blog Home
+title: ECROF-ENGLSIH
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: shao yi chen
 heroFullScreen: true
