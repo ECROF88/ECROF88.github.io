@@ -1,6 +1,6 @@
 /* customStyles.css */
 .firework {
-    position: absolute;
+    position: fixed;
     width: 15px; /* 根据你的图片大小调整 */
     height: 15px; /* 根据你的图片大小调整 */
     background-image: url('1.png');
