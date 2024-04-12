@@ -10,7 +10,8 @@ export default hopeTheme({
     name: "ECROF",
     url: "https://ecrof88.github.io/",
   },
-
+  print: false,
+  
   iconAssets: 
     "fontawesome",
 

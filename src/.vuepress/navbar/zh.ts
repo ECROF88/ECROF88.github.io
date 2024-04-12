@@ -48,6 +48,12 @@ export const zhNavbar = navbar([
           { text: "1", icon: "pen-to-square", link: "test1" },
         ],
        },
+      {
+        text:"线性代数", icon: "book", prefix: "linear-algebra/",  
+        children: [
+          { text: "1", icon: "pen-to-square", link: "1" },
+        ],
+          }
     ],
 
   },
