@@ -10,14 +10,14 @@ export const zhNavbar = navbar([
     prefix: "/zh/posts/",
     children: [
       {
-        text: "TEST1",
+        text: "HELLDIVERS 2",
         icon: "pen-to-square",
         prefix: "apple/",
         children: [
-          { text: "1", icon: "pen-to-square", link: "1" },
-          { text: "2", icon: "pen-to-square", link: "2" },
-          "3",
-          "4",
+          { text: "战略配备", icon: "pen-to-square", link: "1" },
+          // { text: "2", icon: "pen-to-square", link: "2" },
+          // "3",
+          // "4",
         ],
       },
       // {
