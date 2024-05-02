@@ -128,6 +128,17 @@ void print() {
 
 Example:
 std::vector data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
-// 移除所有偶数
 auto new_end = std::remove_if(data.begin(), data.end(),[](int x) { return x % 2 == 0; });
+这里*new_end是6.
+
+当然，remove_if并不会真的像erase一样删除,只是把符合条件的放在末尾了
+也就是:
+for (auto it = data.begin(); it != data.end(); ++it) 
+{
+    std::cout << *it << " ";//1 3 5 7 9 6 7 8 9 10
+}
+后面的5位并不会变，当然前面1 2 3 4 5被覆盖了。
+所以想要只保留1 3 5 7 9：
+data.erase(std::remove_if(data.begin(), data.end(),[](int x) { return x % 2 == 0; }),data.end());
+//删除从new_end开始到结尾。
 ```
