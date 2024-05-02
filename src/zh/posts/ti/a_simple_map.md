@@ -30,9 +30,16 @@ public:
     }
     void output()
     {
-        for(auto i:pairs)
-        {   
-            cout<<i.first<<" "<<i.second<<endl;
+        //迭代器方法：
+        // for(auto i:pairs)
+        // {   
+        //     cout<<i.first<<" "<<i.second<<endl;
+        // }
+
+        //结构化绑定方法：
+        for(const auto&[a,b]:pairs)
+        {
+            cout<<a<<" "<<b<<endl;
         }
     }
     void remove(KeyType key)
