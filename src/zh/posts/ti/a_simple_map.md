@@ -110,3 +110,24 @@ void print() {
     // 使用 it
 }
 ```
+### lambda表达式
+```cpp
+[capture clause](parameter list) -> return type {
+    // 函数体
+};
+
+捕获子句 (capture clause): 指定 lambda 表达式可以访问的外部变量。
+参数列表 (parameter list): 定义函数的参数，类似于普通函数。
+返回类型 (return type): 可选，可以由编译器自动推导。
+函数体 (function body): 包含函数的实际代码。
+捕获子句
+[]: 不捕获任何外部变量。
+[=]: 按值捕获所有外部变量。
+[&]: 按引用捕获所有外部变量。
+[a, &b]: 按值捕获 a，按引用捕获 b。
+
+Example:
+std::vector data = {1, 2, 3, 4, 5, 6, 7, 8, 9, 10};
+// 移除所有偶数
+auto new_end = std::remove_if(data.begin(), data.end(),[](int x) { return x % 2 == 0; });
+```
