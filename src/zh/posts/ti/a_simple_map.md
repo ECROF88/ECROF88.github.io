@@ -7,7 +7,7 @@ comment: true
 ---
 # A Simple Map
 #### 实现了基本的增删改查
-```c++
+```cpp
 template <typename KeyType, typename ValueType>
 class Map
 {
