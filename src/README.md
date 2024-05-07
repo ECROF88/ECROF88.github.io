@@ -2,9 +2,9 @@
 home: true
 layout: BlogHome
 icon: home
-title: 
+title: MAIN
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: shao yi chen
+heroText: PLZ TURN TO /ZH
 heroFullScreen: true
 tagline: Kovaak'S PurSue!
 projects:

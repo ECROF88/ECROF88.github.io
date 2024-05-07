@@ -2,7 +2,7 @@
 home: true
 layout: BlogHome
 icon: mobile-screen-button
-title: 
+title: MAIN
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
 heroText: ECROF-TECH
 heroFullScreen: true
