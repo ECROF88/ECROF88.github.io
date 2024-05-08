@@ -58,6 +58,19 @@ export const zhNavbar = navbar([
 
   },
   {
+    text: "博文",
+    icon: "pen-to-square",
+    prefix: "/zh/posts/",
+    children:[
+      { text: "something", icon: "book", prefix: "someTH/" ,
+        children: [
+          { text: "remember", icon: "pen-to-square", link: "1" },
+        ],
+       },
+
+    ]
+  },
+  {
     text: "V2 文档",
     icon: "book",
     link: "https://theme-hope.vuejs.press/zh/",
