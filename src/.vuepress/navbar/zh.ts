@@ -58,11 +58,11 @@ export const zhNavbar = navbar([
 
   },
   {
-    text: "博文",
+    text: "MUSE",
     icon: "pen-to-square",
     prefix: "/zh/posts/",
     children:[
-      { text: "something", icon: "book", prefix: "someTH/" ,
+      { text: "something", icon: "book", prefix: "someTh/" ,
         children: [
           { text: "remember", icon: "pen-to-square", link: "1" },
         ],
