@@ -46,3 +46,35 @@
   .heart:before {
     left: -5px;
   }
+
+.spark
+{
+    position: absolute;
+    width:20px;
+    height: 20px;
+    left: 40%;
+
+    border-radius: 50%;
+    pointer-events: none;
+    background: #0a87ff;
+    z-index: 1;
+    animation: animate 2s linear forwards;
+}
+.spark:nth-child(even)
+{
+    background:transparent;
+    border: 1px solid #fff;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(var(--x),var(--y));
+    }
+}
