@@ -114,13 +114,13 @@ int peidui(Node &n)
             Node *nn=NULL;
             int a=j->data;
             if(visited[a]==1)continue;
-            visited[a]=1;
+            visited[a]=1;//先把它改为已被访问，用于后面的 peidui(*nn)
             for(Node &node:nodelist)if(node.target==a)nn=&node;//找到a的配对
             if( (!match[a] || peidui(*nn)))
             //如果match[a]=0，直接占据，如果=1，那么就看看nn能不能给它让出来
             //这是因为如果peidui(*nn)里面visited数组没有变，在进入这个函数的时候它之前配对的a已经被设置为1了，
             //所以如果这个这次函数还是返回1，那么就是能够找到一个别的edgenode配对。也就是外面这次抢占的是能够成功的
-            //这是一个多次嵌套的过程
+            //这可以是一个多次嵌套的过程
             {
                 match[a]=n.data;
                 n.target=a;//target是node配对的edgenode的data，在这里也就是for循环里面的j.data
