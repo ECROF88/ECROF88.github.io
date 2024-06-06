@@ -132,5 +132,10 @@ int peidui(Node &n)
 }
 
 ```
+例子：
+![1](/assets/images/1.jpg)
+![1](/assets/images/cover1.jpg)
+
+
 
 
