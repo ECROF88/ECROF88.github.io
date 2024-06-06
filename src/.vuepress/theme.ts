@@ -160,6 +160,7 @@ export default hopeTheme({
       tabs: true,
       vPre: true,
 
+      imgMark: true,
       // install chart.js before enabling it
       // chart: true,
 
