@@ -1,0 +1,80 @@
+/* customStyles.css */
+.firework {
+    position: fixed;
+    width: 15px; /* 根据你的图片大小调整 */
+    height: 15px; /* 根据你的图片大小调整 */
+    background-image: url('1.png');
+    border-radius: 100%;
+    background-size: cover;
+    background-position: left top;
+    opacity: 0;
+    animation: sparkleAnimation 0.3s ;
+  }
+  
+  @keyframes sparkleAnimation {
+      0% { opacity: 0.5; }
+      100% { opacity: 0; }
+  }
+
+
+  .heart {
+    width: 10px;
+    height: 10px;
+    position: fixed;
+    background: #f00;
+    transform: rotate(45deg);
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+  }
+  
+  .heart:after,
+  .heart:before {
+    content: '';
+    width: inherit;
+    height: inherit;
+    background: inherit;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    position: absolute;
+  }
+  
+  .heart:after {
+    top: -5px;
+  }
+  
+  .heart:before {
+    left: -5px;
+  }
+
+.spark
+{
+    position: absolute;
+    width:20px;
+    height: 20px;
+    left: 40%;
+
+    border-radius: 50%;
+    pointer-events: none;
+    background: #0a87ff;
+    z-index: 1;
+    animation: animate 2s linear forwards;
+}
+.spark:nth-child(even)
+{
+    background:transparent;
+    border: 1px solid #fff;
+}
+@keyframes animate
+{
+    0%
+    {
+        opacity: 1;
+        transform: translate(0,0);
+    }
+    100%
+    {
+        opacity: 0;
+        transform: translate(var(--x),var(--y));
+    }
+}
