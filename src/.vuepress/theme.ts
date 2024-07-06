@@ -4,7 +4,7 @@ import { zhSidebar } from "./sidebar/index.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
-  hostname: "https://mister-hope.github.io",
+  hostname: "https://ecrof88.github.io/",
   darkmode: "enable",
   author: {
     name: "ECROF",
