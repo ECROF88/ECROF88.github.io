@@ -1,44 +1,48 @@
 ---
 home: true
 layout: BlogHome
-icon: home
+icon: mobile-screen-button
 title: MAIN
 heroImage: https://theme-hope-assets.vuejs.press/logo.svg
-heroText: PLZ TURN TO /ZH
+heroText: ECROF-TECH
 heroFullScreen: true
 tagline: Kovaak'S PurSue!
 projects:
   # - icon: project
-  #   name: project name
-  #   desc: project detailed description
-  #   link: https://your.project.link
+  #   name: 项目名称
+  #   desc: 项目详细描述
+  #   link: https://你的项目链接
 
   # - icon: link
-  #   name: link name
-  #   desc: link detailed description
-  #   link: https://link.address
+  #   name: 链接名称
+  #   desc: 链接详细描述
+  #   link: https://链接地址
 
   # - icon: book
-  #   name: book name
-  #   desc: Detailed description of the book
-  #   link: https://link.to.your.book
+  #   name: 书籍名称
+  #   desc: 书籍详细描述
+  #   link: https://你的书籍链接
 
   # - icon: article
-  #   name: article name
-  #   desc: Detailed description of the article
-  #   link: https://link.to.your.article
+  #   name: 文章名称
+  #   desc: 文章详细描述
+  #   link: https://你的文章链接
 
   - icon: friend
-    name: friend name
+    name: wispstar
     desc: Detailed description of friend
     link: https://wispstar.github.io
 
+  # - icon: https://theme-hope-assets.vuejs.press/logo.svg
+  #   name: 自定义项目
+  #   desc: 自定义详细介绍
+  #   link: https://你的自定义链接
 
-footer: customize your footer text
+footer: FOR LEGEND!
 ---
 
-This is a blog home page demo.
+<!-- 这是一个博客主页的案例。
 
-To use this layout, you should set both `layout: BlogHome` and `home: true` in the page front matter.
+要使用此布局，你应该在页面前端设置 `layout: BlogHome` 和 `home: true`。
 
-For related configuration docs, please see [blog homepage](https://theme-hope.vuejs.press/guide/blog/home/).
+相关配置文档请见 [博客主页](https://theme-hope.vuejs.press/zh/guide/blog/home/)。 -->

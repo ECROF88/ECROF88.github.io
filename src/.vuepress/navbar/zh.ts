@@ -1,13 +1,13 @@
 import { checkSocialMediaIcons, navbar } from "vuepress-theme-hope";
 
 export const zhNavbar = navbar([
-  "/zh/",
+  "/",
   // "/zh/demo/",
   {
 
     text: "博文",
     icon: "pen-to-square",
-    prefix: "/zh/posts/",
+    prefix: "/posts/",
     children: [
       {
         text: "HELLDIVERS 2",
@@ -60,7 +60,7 @@ export const zhNavbar = navbar([
   {
     text: "MUSE",
     icon: "pen-to-square",
-    prefix: "/zh/posts/",
+    prefix: "/posts/",
     children:[
       { text: "something", icon: "book", prefix: "someTh/" ,
         children: [

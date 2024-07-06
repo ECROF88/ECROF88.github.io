@@ -1,6 +1,6 @@
 import { hopeTheme } from "vuepress-theme-hope";
-import { enNavbar, zhNavbar } from "./navbar/index.js";
-import { enSidebar, zhSidebar } from "./sidebar/index.js";
+import {  zhNavbar } from "./navbar/index.js";
+import { zhSidebar } from "./sidebar/index.js";
 import { MR_HOPE_AVATAR } from "./logo.js";
 
 export default hopeTheme({
@@ -42,10 +42,10 @@ export default hopeTheme({
   locales: {
     "/": {
       // navbar
-      navbar: enNavbar,
+      navbar: zhNavbar,
 
       // sidebar
-      sidebar: enSidebar,
+      sidebar: zhSidebar,
 
       footer: "Default footer",
 
@@ -67,30 +67,30 @@ export default hopeTheme({
     /**
      * Chinese locale config
      */
-    "/zh/": {
-      // navbar
-      navbar: zhNavbar,
-
-      // sidebar
-      sidebar: zhSidebar,
-
-      footer: "FOR LEGEND!",
-
-      displayFooter: true,
-
-      blog: {
-        avatar: "https://avatars.githubusercontent.com/u/114860152?s=400&u=cbe5964d8b2b1057bc78fc069afc29744df08ba6&v=4",
-        name: "ECROF",
-        roundAvatar: true,
-        description: "GODDDD LIKE",
-        intro: "/zh/intro.html",
-      },
-
-      // page meta
-      metaLocales: {
-        editLink: "在 GitHub 上编辑此页",
-      },
-    },
+    // "/zh/": {
+    //   // navbar
+    //   navbar: zhNavbar,
+    //
+    //   // sidebar
+    //   sidebar: zhSidebar,
+    //
+    //   footer: "FOR LEGEND!",
+    //
+    //   displayFooter: true,
+    //
+    //   blog: {
+    //     avatar: "https://avatars.githubusercontent.com/u/114860152?s=400&u=cbe5964d8b2b1057bc78fc069afc29744df08ba6&v=4",
+    //     name: "ECROF",
+    //     roundAvatar: true,
+    //     description: "GODDDD LIKE",
+    //     intro: "/zh/intro.html",
+    //   },
+    //
+    //   // page meta
+    //   metaLocales: {
+    //     editLink: "在 GitHub 上编辑此页",
+    //   },
+    // },
   },
   
   encrypt: {

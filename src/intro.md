@@ -3,6 +3,11 @@ icon: circle-info
 cover: /assets/images/cover3.jpg
 ---
 
-# Intro Page
+# INTRODUCE
 
-league of legend!
+### HI!
+
+### MY QQ :1278310275@qq.com
+
+
+
