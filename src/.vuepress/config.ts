@@ -9,27 +9,14 @@ export default defineUserConfig({
     ['script', { src: '/click-effect.js' }],
   ],
   locales: {
-    // "/": {
-    //   lang: "en-US",
-    //   title: "ECROF-ENGLISH",
-    //   description: "vuepress-theme-hope",
-    // },
     "/": {
       lang: "zh-CN",
       title: "ECROF",
       description: "ECROF",
-      
     },
   },
-
   theme,
-
   // Enable it with pwa
   // shouldPrefetch: false,
-
-
-
-
-
 
 });
