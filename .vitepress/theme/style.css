@@ -137,3 +137,10 @@
   --docsearch-primary-color: var(--vp-c-brand-1) !important;
 }
 
+@font-face {
+  font-family: 'LXGWWenKai';
+  src: url('../assets/LXGWWenKai-Medium.ttf') format('truetype');
+}
+body {
+  font-family: 'LXGWWenKai', sans-serif;
+}
