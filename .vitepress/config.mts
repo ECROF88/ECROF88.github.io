@@ -8,7 +8,39 @@ export default defineConfig({
     // https://vitepress.dev/reference/default-theme-config
     nav: [
       { text: 'Home', link: '/' },
-      { text: 'Notes', link: '/rustnotes/basic1' }
+      { text: 'DISC Notes', 
+        items: [
+          { text: 'windows msys2使用fish', link: '/discnotes/1' },
+          {text: 'WIN终端代理', link: '/discnotes/2'},
+          {text: 'Neovim 基础学习笔记', link: '/discnotes/3'},
+        ]
+      },
+      {
+        text: 'Notes',
+        items: [
+          {
+            // 分组标题
+            text: 'Rust Notes',
+            items: [
+              { text: 'Basic1', link: '/rustnotes/basic1' },
+            ]
+          },
+          {
+            text: 'CPP Notes',
+            items: [
+              { text: 'std中的variant', link: '/cppnotes/1' },
+            ]
+          },
+          {
+            // 分组标题
+            text: 'Java Notes',
+            items: [
+              { text: '自定义注解', link: '/javanotes/1' },
+            ]
+          },
+        ]
+      },
+      
     ],
 
     sidebar: [
@@ -18,7 +50,39 @@ export default defineConfig({
       //     { text: 'Markdown Examples', link: '/markdown-examples' },
       //     { text: 'Runtime API Examples', link: '/api-examples' }
       //   ]
-      // }
+      // },
+      { text: 'DISC Notes', 
+        items: [
+          { text: 'windows msys2使用fish', link: '/discnotes/1' },
+          {text: 'WIN终端代理', link: '/discnotes/2'},
+          {text: 'Neovim 基础学习笔记', link: '/discnotes/3'},
+        ]
+      },
+      {
+        text: 'Notes',
+        items: [
+          {
+            // 分组标题
+            text: 'Rust Notes',
+            items: [
+              { text: 'Basic1', link: '/rustnotes/basic1' },
+            ]
+          },
+          {
+            text: 'CPP Notes',
+            items: [
+              { text: 'std中的variant', link: '/cppnotes/1' },
+            ]
+          },
+          {
+            // 分组标题
+            text: 'Java Notes',
+            items: [
+              { text: '自定义注解', link: '/javanotes/1' },
+            ]
+          },
+        ]
+      },
     ],
 
     socialLinks: [
