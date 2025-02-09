@@ -23,3 +23,4 @@ features:
     details: 近期将会发布windows下的一些基础配置文档
 ---
 
+![alt text](.vitepress/public/favicon.ico)

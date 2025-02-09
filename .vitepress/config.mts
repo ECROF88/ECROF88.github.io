@@ -4,15 +4,22 @@ import { defineConfig } from 'vitepress'
 export default defineConfig({
   title: "ecrof88-blog",
   description: "Kovaak ini",
+  head: [
+    ['link', { rel: 'icon', href: '/favicon.ico', sizes: 'any' }],
+    ['link', { rel: 'icon', href: '/favicon.svg', type: 'image/svg+xml' }],
+  ],
   themeConfig: {
+    logo: '/favicon.ico',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
+
       { text: 'Home', link: '/' },
-      { text: 'DISC Notes', 
+      {
+        text: 'DISC Notes',
         items: [
           { text: 'windows msys2使用fish', link: '/discnotes/1' },
-          {text: 'WIN终端代理', link: '/discnotes/2'},
-          {text: 'Neovim 基础学习笔记', link: '/discnotes/3'},
+          { text: 'WIN终端代理', link: '/discnotes/2' },
+          { text: 'Neovim 基础学习笔记', link: '/discnotes/3' },
         ]
       },
       {
@@ -40,7 +47,7 @@ export default defineConfig({
           },
         ]
       },
-      
+
     ],
 
     sidebar: [
@@ -51,11 +58,12 @@ export default defineConfig({
       //     { text: 'Runtime API Examples', link: '/api-examples' }
       //   ]
       // },
-      { text: 'DISC Notes', 
+      {
+        text: 'DISC Notes',
         items: [
           { text: 'windows msys2使用fish', link: '/discnotes/1' },
-          {text: 'WIN终端代理', link: '/discnotes/2'},
-          {text: 'Neovim 基础学习笔记', link: '/discnotes/3'},
+          { text: 'WIN终端代理', link: '/discnotes/2' },
+          { text: 'Neovim 基础学习笔记', link: '/discnotes/3' },
         ]
       },
       {
