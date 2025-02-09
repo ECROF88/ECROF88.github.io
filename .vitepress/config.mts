@@ -5,11 +5,10 @@ export default defineConfig({
   title: "ecrof88-blog",
   description: "Kovaak ini",
   head: [
-    ['link', { rel: 'icon', href: './favicon.ico', sizes: 'any' }],
-    ['link', { rel: 'icon', href: './favicon.svg', type: 'image/svg+xml' }],
+    ['link', { rel: 'icon', href: '.vitepress/public/favicon.ico' }],
   ],
   themeConfig: {
-    logo: './public/favicon.ico',
+    logo: '.vitepress/public/favicon.ico',
     // https://vitepress.dev/reference/default-theme-config
     nav: [
 
