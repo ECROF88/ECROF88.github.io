@@ -5,7 +5,7 @@ export default defineConfig({
   title: "ecrof88-blog",
   description: "Kovaak ini",
   head: [
-    ['link', { rel: 'icon', href: '/favicon.ico' }],
+    ['link', { rel: 'icon', href: '.vitepress/favicon.ico' }],
   ],
   themeConfig: {
     // logo: '/favicon.ico',
