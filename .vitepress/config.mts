@@ -41,7 +41,7 @@ export default defineConfig({
             text: "Rust Notes",
             items: [
               { text: "Basic1", link: "/rustnotes/basic1" },
-              { text: "Basic1", link: "/rustnotes/sortalgo" },
+              { text: "SORT_ALGO", link: "/rustnotes/sortalgo" },
             ],
           },
           {
@@ -79,7 +79,10 @@ export default defineConfig({
           {
             // 分组标题
             text: "Rust Notes",
-            items: [{ text: "Basic1", link: "/rustnotes/basic1" }],
+            items: [
+              { text: "Basic1", link: "/rustnotes/basic1" },
+              { text: "SORT_ALGO", link: "/rustnotes/sortalgo" },
+            ],
           },
           {
             text: "CPP Notes",
