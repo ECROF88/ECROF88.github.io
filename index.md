@@ -22,3 +22,4 @@ features:
     title: Notice
     details: 近期将会发布windows下的一些基础配置文档
 ---
+<!-- Title <Badge type="tip" text="^1.9.0" /> -->

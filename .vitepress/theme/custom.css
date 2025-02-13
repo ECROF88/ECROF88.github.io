@@ -1,0 +1,8 @@
+/* 页面切换淡入效果 */
+.VPContent {
+  animation: fadeIn 2s ease;
+}
+
+:root {
+    --vp-c-brand-1: hwb(259 52% 7%);
+  }
