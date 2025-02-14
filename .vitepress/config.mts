@@ -41,7 +41,7 @@ export default defineConfig({
             text: "Rust Notes",
             items: [
               { text: "Basic1", link: "/rustnotes/basic1" },
-              { text: "SORT_ALGO", link: "/rustnotes/sortalgo" },
+              { text: "SortAlgo", link: "/rustnotes/sortalgo" },
             ],
           },
           {
@@ -52,6 +52,10 @@ export default defineConfig({
             // 分组标题
             text: "Java Notes",
             items: [{ text: "自定义注解", link: "/javanotes/1" }],
+          },
+          {
+            text: "React Notes",
+            items: [{ text: "笔记1", link: "/react/1" }],
           },
         ],
       },
