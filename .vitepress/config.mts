@@ -62,6 +62,7 @@ export default defineConfig({
             items: [
               { text: "wezterm配置", link: "/configtur/wezterm" },
               { text: "autohotkey配置", link: "/configtur/AutohotKey" },
+              { text: "msys2配置", link: "/configtur/msys2" },
             ],
           },
         ],
@@ -101,6 +102,7 @@ export default defineConfig({
             items: [
               { text: "wezterm配置", link: "/configtur/wezterm" },
               { text: "autohotkey配置", link: "/configtur/AutohotKey" },
+              { text: "msys2配置", link: "/configtur/msys2" },
             ],
           },
         ],
