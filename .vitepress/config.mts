@@ -57,6 +57,10 @@ export default defineConfig({
             text: "React Notes",
             items: [{ text: "笔记1", link: "/react/1" }],
           },
+          {
+            text: "Config",
+            items: [{ text: "wezterm配置", link: "/configtur/wezterm" }],
+          },
         ],
       },
     ],
@@ -93,9 +97,12 @@ export default defineConfig({
             items: [{ text: "std中的variant", link: "/cppnotes/1" }],
           },
           {
-            // 分组标题
             text: "Java Notes",
             items: [{ text: "自定义注解", link: "/javanotes/1" }],
+          },
+          {
+            text: "Config",
+            items: [{ text: "wezterm配置", link: "/configtur/wezterm" }],
           },
         ],
       },
