@@ -1,8 +1,8 @@
 # windows 下 wezterm 配置
 
-## 在 ~/.config/ 下新建wezterm文件夹 (.config文件夹没有就自己建一个)
+在 ~/.config/ 下新建wezterm文件夹 (.config文件夹没有就自己建一个)
 
-### wezterm/wezterm.lua
+## wezterm/wezterm.lua
 ```lua
 local wezterm = require 'wezterm'
 -- 系统平台判断工具
@@ -94,7 +94,7 @@ return config
 
 ```
 
-### wezterm/utils/platform.lua
+## wezterm/utils/platform.lua
 ```lua
 local wezterm = require('wezterm')
 
@@ -114,9 +114,9 @@ return platform
 
 ```
 
-### wezterm/config/
+## wezterm/config/
 下面这些文件放在config目录下面
-#### appears.lua
+### appears.lua
 字体没有可以自己设置
 ```lua
 -- 外观设定
@@ -180,7 +180,7 @@ end
 return module
 
 ```
-#### keys.lua
+### keys.lua
 ```lua
 -- 快捷键绑定
 local wezterm = require 'wezterm'
@@ -202,7 +202,7 @@ return module
 
 ```
 
-#### lanch.lua
+### lanch.lua
 配置支持的shell,没有的可以自己改
 ```lua
 -- Shell 配置
