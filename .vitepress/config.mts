@@ -59,20 +59,16 @@ export default defineConfig({
           },
           {
             text: "Config",
-            items: [{ text: "wezterm配置", link: "/configtur/wezterm" }],
+            items: [
+              { text: "wezterm配置", link: "/configtur/wezterm" },
+              { text: "autohotkey配置", link: "/configtur/AutohotKey" },
+            ],
           },
         ],
       },
     ],
 
     sidebar: [
-      // {
-      //   text: 'Examples',
-      //   items: [
-      //     { text: 'Markdown Examples', link: '/markdown-examples' },
-      //     { text: 'Runtime API Examples', link: '/api-examples' }
-      //   ]
-      // },
       {
         text: "DISC Notes",
         items: [
@@ -102,7 +98,10 @@ export default defineConfig({
           },
           {
             text: "Config",
-            items: [{ text: "wezterm配置", link: "/configtur/wezterm" }],
+            items: [
+              { text: "wezterm配置", link: "/configtur/wezterm" },
+              { text: "autohotkey配置", link: "/configtur/AutohotKey" },
+            ],
           },
         ],
       },
