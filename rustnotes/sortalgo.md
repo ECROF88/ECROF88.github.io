@@ -71,3 +71,71 @@ fn partition(arr:&mut [i32]) -> usize{
     left
 }
 ```
+
+### 计数排序
+```rust
+fn main() {
+    let arr = vec![3, 2, 3, 4, 5, 4];
+    let sorted_arr = count_sort(&arr);
+    println!("{:?}", sorted_arr);
+}
+
+fn count_sort(arr: &Vec<i32>) -> Vec<i32> {
+    let min = *arr.iter().min().unwrap();
+    let max = *arr.iter().max().unwrap();
+
+    let range = (max - min + 1) as usize;
+
+    let mut count_arr = vec![0; range];
+
+    for i in 0..arr.len() {
+        count_arr[arr[i] as usize - min as usize] += 1;
+    }
+
+    // 计算累计频次
+    for i in 1..range {
+        count_arr[i] += count_arr[i - 1];
+    }
+
+    let mut result = vec![0; arr.len()];
+
+    for i in (0..arr.len()).rev() {
+        let cur_element = arr[i];
+        let count_index = (cur_element - min) as usize;
+        let position = count_arr[count_index] - 1;
+        result[position] = cur_element;
+        count_arr[count_index] -= 1;
+    }
+
+    result
+}
+```
+
+### 优雅的基数排序
+基于前面的计数排序
+```rust
+fn radix_sort(arr: &Vec<i32>) -> Vec<i32> {
+    let mut result = arr.clone();
+
+    let max = *arr.iter().max().unwrap();
+    let max_digits = max.to_string().len();
+    // let max_digits = (max as f64).log10().floor() as u32 + 1;
+    for digit in 0..max_digits {
+        result = counting_sort(result, digit);
+    }
+
+    result
+}
+
+fn counting_sort(arr: Vec<i32>, digit: usize) -> Vec<i32> {
+    let mut buckets: Vec<Vec<i32>> = vec![Vec::new(); 10];
+
+    for num in arr {
+        let digit_value = (num.abs() / 10_i32.pow(digit as u32)) % 10;
+        buckets[digit_value as usize].push(num);
+    }
+
+    buckets.into_iter().flatten().collect()
+}
+
+```

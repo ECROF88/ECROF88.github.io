@@ -55,7 +55,10 @@ export default defineConfig({
           },
           {
             text: "React Notes",
-            items: [{ text: "笔记1", link: "/react/1" }],
+            items: [
+              { text: "笔记1", link: "/react/1" },
+              { text: "basic TS", link: "/react/ts" },
+            ],
           },
           {
             text: "Config",
@@ -66,6 +69,10 @@ export default defineConfig({
             ],
           },
         ],
+      },
+      {
+        text: "elegant LC",
+        items: [{ text: "56. 合并区间", link: "/elegantleetcode/lc-56" }],
       },
     ],
 
