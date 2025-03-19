@@ -94,6 +94,7 @@ export default defineConfig({
             items: [
               { text: "Basic1", link: "/rustnotes/basic1" },
               { text: "SORT_ALGO", link: "/rustnotes/sortalgo" },
+              { text: "设计模式", link: "/rustnotes/observerpattern" },
             ],
           },
           {
