@@ -20,7 +20,7 @@ pub enum Message {
 
 // 简单的向量结构
 #[derive(Debug, Clone, Copy, Default)]
-struct Vec3 {
+pub struct Vec3 {
     x: f32,
     y: f32,
     z: f32,
@@ -39,9 +39,11 @@ impl Vec3 {
 }
 
 pub trait IsComponent {
-    fn update(&mut self);
+    fn update(&mut self, _go: &GameObject) {}
 
     fn handle_message(&mut self, msg: Message);
+
+    fn subscribe_messages<'a: 'b, 'b>(&'a mut self, _go: &mut GameObject<'b>) {}
 }
 
 #[derive(Debug, Clone, Copy)]
@@ -51,13 +53,11 @@ struct Movable {
 }
 
 impl IsComponent for Movable {
-    fn update(&mut self) {}
-
     fn handle_message(&mut self, msg: Message) {
         match msg {
             Message::Move { velocity_change } => {
                 // self.velocity += velocity_change;
-                println!("收到消息");
+                println!("收到消息：{:#?}", velocity_change);
                 self.velocity.add(velocity_change);
             }
             _ => {
@@ -65,22 +65,19 @@ impl IsComponent for Movable {
             }
         }
     }
-    // fn subscribe_messages(&mut self, go: &mut GameObject) {
-    //     go.subscribe(EventType::MoveMessage, self);
-    // }
 }
 
 // 组件枚举
 #[derive(Debug, Clone, Copy)]
 enum Component {
+    // Movable { position: Vec3, velocity: Vec3 },
     Movable(Movable),
 }
-
-impl Component {
+impl IsComponent for Component {
     fn update(&mut self, go: &GameObject) {
         match self {
             Component::Movable(movable) => {
-                movable.update();
+                movable.update(go);
             }
         }
     }
@@ -105,7 +102,7 @@ enum EventType {
     // OtherMessage,
 }
 
-struct GameObject<'a> {
+pub struct GameObject<'a> {
     // components: Vec<&'a Component>,
     subscribers: HashMap<EventType, Vec<&'a mut Component>>, // 存储组件在components中的索引
 }
@@ -118,7 +115,6 @@ impl<'a> GameObject<'a> {
         }
     }
 
-    // 这里被生命周期问题折磨了一段时间，现在对生命周期的理解比以前清晰了
     fn subscribe<'b: 'a>(&mut self, event_type: EventType, component: &'b mut Component) {
         self.subscribers
             .entry(event_type)
@@ -126,9 +122,6 @@ impl<'a> GameObject<'a> {
             .push(component);
     }
 
-    // 暂时没有写这个add方法，有一个问题
-    // 如果搞两个vector的话，往里面添加同一个Component
-    // 不能一个是共享引用，一个是可变独占引用
     // fn add(&mut self, component: &'a Component) {
     //     self.components.push(component);
     // }
@@ -148,10 +141,20 @@ impl<'a> GameObject<'a> {
         println!("GameObject updated");
     }
 }
+
+struct PlayerController;
+
+impl PlayerController {
+    fn update(&mut self, go: &mut GameObject) {
+        let message = Message::Move {
+            velocity_change: Vec3::new(1.0, 2.0, 3.0),
+        };
+        go.send(EventType::MoveMessage, message);
+    }
+}
 ```
 ## 接下来就是main函数的效果
 ```rust
-fn main() {
     let mut game_object = GameObject::new();
 
     let mut movable_component = Component::Movable(Movable {
@@ -168,20 +171,16 @@ fn main() {
     });
 
     movable_component.subscribe_messages(&mut game_object);
-    // 发送移动消息
-    game_object.send(
-        EventType::MoveMessage,
-        Message::Move {
-            velocity_change: Vec3::new(1.0, 2.0, 3.0),
-        },
-    );
 
-    game_object.update();
-}
+    let mut palyer = PlayerController;
+    palyer.update(&mut game_object);
 
 ```
 打印：
 ```
-收到消息
-GameObject updated
+收到消息：Vec3 {
+    x: 1.0,
+    y: 2.0,
+    z: 3.0,
+}
 ```
